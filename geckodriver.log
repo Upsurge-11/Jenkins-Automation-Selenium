@@ -83,3 +83,19 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: http://1
 JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
 1681025958181	Marionette	INFO	Stopped listening on port 42895
+1681575644297	geckodriver	INFO	Listening on 127.0.0.1:51759
+1681575644793	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "51863" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilecrGhaJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+[GFX1-]: glxtest: libEGL missing
+1681575645895	Marionette	INFO	Marionette enabled
+1681575645901	Marionette	INFO	Listening on port 45731
+Read port: 45731
+WebDriver BiDi listening on ws://127.0.0.1:51863
+1681575646129	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecrGhaJ/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:51863/devtools/browser/06f58825-fe96-454f-ac5f-908072161738
+1681575648353	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1681575658454	Marionette	INFO	Stopped listening on port 45731

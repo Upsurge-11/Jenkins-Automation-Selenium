@@ -5,12 +5,15 @@ from selenium.webdriver.common.by import By
 s = Service('/usr/bin/geckodriver')
 driver = webdriver.Firefox(service=s)
 
-driver.get('http://15.206.145.37:8080/')
+jenkins_link = input("Input the jenkins url link with port:-")
+driver.get(jenkins_link)
 
 driver.implicitly_wait(3)
 
-driver.find_element(By.ID, 'j_username').send_keys('cicdation')
-driver.find_element(By.NAME, 'j_password').send_keys('KIIT2024')
+username = input("Enter the username:- ")
+password = input("Enter the password:- ")
+driver.find_element(By.ID, 'j_username').send_keys(username)
+driver.find_element(By.NAME, 'j_password').send_keys(password)
 driver.find_element(By.NAME, 'Submit').click()
 
 driver.implicitly_wait(3)
